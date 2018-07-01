@@ -12,6 +12,8 @@
 		00F18CBF20E93498004CDCC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00F18CBD20E93498004CDCC3 /* Main.storyboard */; };
 		00F18CC120E9349A004CDCC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00F18CC020E9349A004CDCC3 /* Assets.xcassets */; };
 		00F18CC420E9349A004CDCC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00F18CC220E9349A004CDCC3 /* LaunchScreen.storyboard */; };
+		00F18CCC20E938B1004CDCC3 /* courseArt.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 00F18CCB20E938B1004CDCC3 /* courseArt.scnassets */; };
+		00F18CCE20E94076004CDCC3 /* Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F18CCD20E94076004CDCC3 /* Shapes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		00F18CC020E9349A004CDCC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00F18CC320E9349A004CDCC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00F18CC520E9349A004CDCC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00F18CCB20E938B1004CDCC3 /* courseArt.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = courseArt.scnassets; sourceTree = "<group>"; };
+		00F18CCD20E94076004CDCC3 /* Shapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shapes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +42,7 @@
 		00F18CAB20E93498004CDCC3 = {
 			isa = PBXGroup;
 			children = (
+				00F18CCD20E94076004CDCC3 /* Shapes.swift */,
 				00F18CB620E93498004CDCC3 /* SceneKitIntro01 */,
 				00F18CB520E93498004CDCC3 /* Products */,
 			);
@@ -58,6 +63,7 @@
 				00F18CBB20E93498004CDCC3 /* GameViewController.swift */,
 				00F18CBD20E93498004CDCC3 /* Main.storyboard */,
 				00F18CC020E9349A004CDCC3 /* Assets.xcassets */,
+				00F18CCB20E938B1004CDCC3 /* courseArt.scnassets */,
 				00F18CC220E9349A004CDCC3 /* LaunchScreen.storyboard */,
 				00F18CC520E9349A004CDCC3 /* Info.plist */,
 			);
@@ -122,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00F18CCC20E938B1004CDCC3 /* courseArt.scnassets in Resources */,
 				00F18CC420E9349A004CDCC3 /* LaunchScreen.storyboard in Resources */,
 				00F18CC120E9349A004CDCC3 /* Assets.xcassets in Resources */,
 				00F18CBF20E93498004CDCC3 /* Main.storyboard in Resources */,
@@ -137,6 +144,7 @@
 			files = (
 				00F18CBC20E93498004CDCC3 /* GameViewController.swift in Sources */,
 				00F18CB820E93498004CDCC3 /* AppDelegate.swift in Sources */,
+				00F18CCE20E94076004CDCC3 /* Shapes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
