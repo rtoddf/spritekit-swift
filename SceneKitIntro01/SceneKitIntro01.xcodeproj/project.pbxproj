@@ -14,6 +14,7 @@
 		00F18CC420E9349A004CDCC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00F18CC220E9349A004CDCC3 /* LaunchScreen.storyboard */; };
 		00F18CCC20E938B1004CDCC3 /* courseArt.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 00F18CCB20E938B1004CDCC3 /* courseArt.scnassets */; };
 		00F18CCE20E94076004CDCC3 /* Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F18CCD20E94076004CDCC3 /* Shapes.swift */; };
+		ADB3341320EAB63F007592CA /* RandomNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB3341220EAB63F007592CA /* RandomNumbers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		00F18CC520E9349A004CDCC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00F18CCB20E938B1004CDCC3 /* courseArt.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = courseArt.scnassets; sourceTree = "<group>"; };
 		00F18CCD20E94076004CDCC3 /* Shapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shapes.swift; sourceTree = "<group>"; };
+		ADB3341220EAB63F007592CA /* RandomNumbers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomNumbers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,7 @@
 		00F18CAB20E93498004CDCC3 = {
 			isa = PBXGroup;
 			children = (
+				ADB3341120EAB63F007592CA /* IntroUtilities */,
 				00F18CCD20E94076004CDCC3 /* Shapes.swift */,
 				00F18CB620E93498004CDCC3 /* SceneKitIntro01 */,
 				00F18CB520E93498004CDCC3 /* Products */,
@@ -68,6 +71,14 @@
 				00F18CC520E9349A004CDCC3 /* Info.plist */,
 			);
 			path = SceneKitIntro01;
+			sourceTree = "<group>";
+		};
+		ADB3341120EAB63F007592CA /* IntroUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				ADB3341220EAB63F007592CA /* RandomNumbers.swift */,
+			);
+			path = IntroUtilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +156,7 @@
 				00F18CBC20E93498004CDCC3 /* GameViewController.swift in Sources */,
 				00F18CB820E93498004CDCC3 /* AppDelegate.swift in Sources */,
 				00F18CCE20E94076004CDCC3 /* Shapes.swift in Sources */,
+				ADB3341320EAB63F007592CA /* RandomNumbers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
