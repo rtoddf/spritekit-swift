@@ -5,6 +5,7 @@ class GameViewController: UIViewController {
     var scnView:SCNView!
     var scnScene:SCNScene!
     var cameraNode:SCNNode!
+    var spawnTime:TimeInterval = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -14,7 +15,7 @@ class GameViewController: UIViewController {
         setupView()
         setupScene()
         setupCamera()
-        spawnShape()
+//        spawnShape()
     }
     
     override var shouldAutorotate: Bool {
@@ -29,6 +30,9 @@ class GameViewController: UIViewController {
         scnView = self.view as! SCNView
         scnView.allowsCameraControl = true
         scnView.autoenablesDefaultLighting = true
+        scnView.delegate = self
+        // so scenekit doesn't enter a paused state
+        scnView.isPlaying = true
     }
     
     func setupScene() {
@@ -82,7 +86,54 @@ class GameViewController: UIViewController {
         geometry.materials.first?.diffuse.contents = UIColor.random()
         geometry.materials.first?.specular.contents = UIColor(named: "#fff")
     }
+    
+    func cleanUp() {
+        for node in scnScene.rootNode.childNodes {
+            if node.presentation.position.y < -10 {
+                node.removeFromParentNode()
+            }
+        }
+    }
 }
+
+extension GameViewController:SCNSceneRendererDelegate {
+    
+    func renderer(_ renderer:SCNSceneRenderer, updateAtTime time:TimeInterval) {
+//        spawnShape()
+        // leaving this as is, we are spawning 60 shapes per second
+        
+        // what is time??
+//        print("time: \(time)")
+        
+        if time > spawnTime {
+            spawnShape()
+            spawnTime = time + TimeInterval(Float.random(min: 0.3, max: 1.8))
+        }
+        
+        cleanUp()
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
