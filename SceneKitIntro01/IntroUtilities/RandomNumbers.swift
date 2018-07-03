@@ -64,9 +64,9 @@ extension UIColor {
         return UIColorOptions[rand]
     }
     
-    public static var black: UIColor {
-        return UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 1.0)
-    }
+//    public static var black: UIColor {
+//        return UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 1.0)
+//    }
     
     public static var silver: UIColor {
         return UIColor(red: 192/255, green: 192/255, blue: 192/255, alpha: 1.0)

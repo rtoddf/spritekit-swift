@@ -15,6 +15,8 @@
 		00F18CCC20E938B1004CDCC3 /* courseArt.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 00F18CCB20E938B1004CDCC3 /* courseArt.scnassets */; };
 		00F18CCE20E94076004CDCC3 /* Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F18CCD20E94076004CDCC3 /* Shapes.swift */; };
 		ADB3341320EAB63F007592CA /* RandomNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB3341220EAB63F007592CA /* RandomNumbers.swift */; };
+		ADD5C48B20EBDC8400DFE759 /* Fire.scnp in Resources */ = {isa = PBXBuildFile; fileRef = ADD5C48920EBDC8400DFE759 /* Fire.scnp */; };
+		ADD5C48C20EBDC8400DFE759 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD5C48A20EBDC8400DFE759 /* spark.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		00F18CCB20E938B1004CDCC3 /* courseArt.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = courseArt.scnassets; sourceTree = "<group>"; };
 		00F18CCD20E94076004CDCC3 /* Shapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shapes.swift; sourceTree = "<group>"; };
 		ADB3341220EAB63F007592CA /* RandomNumbers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomNumbers.swift; sourceTree = "<group>"; };
+		ADD5C48920EBDC8400DFE759 /* Fire.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = Fire.scnp; sourceTree = "<group>"; };
+		ADD5C48A20EBDC8400DFE759 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +48,7 @@
 		00F18CAB20E93498004CDCC3 = {
 			isa = PBXGroup;
 			children = (
+				ADD5C48820EBDC4A00DFE759 /* Particles */,
 				ADB3341120EAB63F007592CA /* IntroUtilities */,
 				00F18CCD20E94076004CDCC3 /* Shapes.swift */,
 				00F18CB620E93498004CDCC3 /* SceneKitIntro01 */,
@@ -79,6 +84,15 @@
 				ADB3341220EAB63F007592CA /* RandomNumbers.swift */,
 			);
 			path = IntroUtilities;
+			sourceTree = "<group>";
+		};
+		ADD5C48820EBDC4A00DFE759 /* Particles */ = {
+			isa = PBXGroup;
+			children = (
+				ADD5C48920EBDC8400DFE759 /* Fire.scnp */,
+				ADD5C48A20EBDC8400DFE759 /* spark.png */,
+			);
+			path = Particles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,8 +154,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				00F18CCC20E938B1004CDCC3 /* courseArt.scnassets in Resources */,
+				ADD5C48C20EBDC8400DFE759 /* spark.png in Resources */,
 				00F18CC420E9349A004CDCC3 /* LaunchScreen.storyboard in Resources */,
 				00F18CC120E9349A004CDCC3 /* Assets.xcassets in Resources */,
+				ADD5C48B20EBDC8400DFE759 /* Fire.scnp in Resources */,
 				00F18CBF20E93498004CDCC3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -56,7 +56,7 @@ class GameViewController: UIViewController {
         var geometry:SCNGeometry
         switch ShapeType.random() {
         case .cone:
-            geometry = SCNCone(topRadius: 0.25, bottomRadius: 0.5, height: 1)
+            geometry = SCNCone(topRadius: 0.0, bottomRadius: 0.5, height: 1)
         case .capsule:
             geometry = SCNCapsule(capRadius: 0.3, height: 2.5)
         case .tube:
@@ -64,7 +64,7 @@ class GameViewController: UIViewController {
         case .sphere:
             geometry = SCNSphere(radius: 0.5)
         case .torus:
-            geometry = SCNTorus(ringRadius: 0.5, pipeRadius: 0.5)
+            geometry = SCNTorus(ringRadius: 1.0, pipeRadius: 0.5)
         case .pyramid:
             geometry = SCNPyramid(width: 1.0, height: 1.0, length: 1.0)
         case .cylinder:
@@ -82,9 +82,14 @@ class GameViewController: UIViewController {
         let force = SCNVector3(x: randomX, y: randomY, z: 0)
         let position = SCNVector3(x: 0.07, y: 0.07, z: 0.07)
         
+        let color:UIColor = UIColor.random()
+        
         geometryNode.physicsBody?.applyForce(force, at: position, asImpulse: true)
-        geometry.materials.first?.diffuse.contents = UIColor.random()
+        geometry.materials.first?.diffuse.contents = color
         geometry.materials.first?.specular.contents = UIColor(named: "#fff")
+        
+        let trailEmitter = createParticleTrail(color: color, geometry: geometry)
+        geometryNode.addParticleSystem(trailEmitter)
     }
     
     func cleanUp() {
@@ -93,6 +98,13 @@ class GameViewController: UIViewController {
                 node.removeFromParentNode()
             }
         }
+    }
+    
+    func createParticleTrail(color:UIColor, geometry:SCNGeometry) -> SCNParticleSystem {
+        let trail = SCNParticleSystem(named: "Fire.scnp", inDirectory: nil)!
+        trail.particleColor = color
+        trail.emitterShape = geometry
+        return trail
     }
 }
 
