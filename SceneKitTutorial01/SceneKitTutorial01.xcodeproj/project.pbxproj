@@ -12,6 +12,7 @@
 		001185DC20EC31A100B120C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 001185DA20EC31A100B120C5 /* Main.storyboard */; };
 		001185DE20EC31A300B120C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 001185DD20EC31A300B120C5 /* Assets.xcassets */; };
 		001185E120EC31A300B120C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 001185DF20EC31A300B120C5 /* LaunchScreen.storyboard */; };
+		001185EA20EC46CD00B120C5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001185E920EC46CD00B120C5 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		001185DD20EC31A300B120C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		001185E020EC31A300B120C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		001185E220EC31A300B120C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		001185E920EC46CD00B120C5 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		001185D520EC31A100B120C5 /* SceneKitTutorial01 */ = {
 			isa = PBXGroup;
 			children = (
+				001185E820EC46BE00B120C5 /* Helpers */,
 				001185D620EC31A100B120C5 /* AppDelegate.swift */,
 				001185D820EC31A100B120C5 /* ViewController.swift */,
 				001185DA20EC31A100B120C5 /* Main.storyboard */,
@@ -62,6 +65,14 @@
 				001185E220EC31A300B120C5 /* Info.plist */,
 			);
 			path = SceneKitTutorial01;
+			sourceTree = "<group>";
+		};
+		001185E820EC46BE00B120C5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				001185E920EC46CD00B120C5 /* Extensions.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				001185D920EC31A100B120C5 /* ViewController.swift in Sources */,
+				001185EA20EC46CD00B120C5 /* Extensions.swift in Sources */,
 				001185D720EC31A100B120C5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
